@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Portfolio Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Digital Portfolio</h1>
+    <form id="portfolio-form">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+<span id="email-error" class="error-message"></span>
+
+<input type="text" id="phone" placeholder="Phone Number" required />
+<span id="phone-error" class="error-message"></span>
+
+      <textarea id="about" placeholder="About Me" required></textarea>
+      <textarea id="education" placeholder="Education" required></textarea>
+      <input type="text" id="skills" placeholder="Skills (comma separated)" required />
+      <textarea id="projects" placeholder="Projects (Title - Description per line)" required></textarea>
+      <textarea id="experience" placeholder="Experience" required></textarea>
+      <textarea id="objective" placeholder="Objective" required></textarea>
+      <textarea id="internships" placeholder="Internships"></textarea>
+      <textarea id="achievements" placeholder="Achievements (comma separated)"></textarea>
+      <h1>PERSONAL DETAILS</h1>
+      <input type="text" id="gender" placeholder="Gender" />
+      <input type="date" id="dob" placeholder="Date of Birth" />
+      <input type="text" id="hobbies" placeholder="Hobbies (comma separated)" />
+      <input type="text" id="languages" placeholder="Languages Known (comma separated)" />
+      <input type="text" id="social-links" placeholder="Social Links (comma separated)" />
+      <input type="file" id="profile-pic" accept="image/*" />
+      <textarea id="declaration" placeholder="Declaration"></textarea>
+      <input type="color" id="theme-color" value="#0d47a1" />
+      <button type="button" onclick="generatePortfolio()">Generate Portfolio</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
